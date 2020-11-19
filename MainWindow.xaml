@@ -119,7 +119,7 @@ Style="{StaticResource textBoxInError}"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Orders">
-                <Grid Background="#FFE5E5E5" DataContext="{StaticResource customerViewSource}" Margin="0,26,0,0">
+                <Grid Background="#FFE5E5E5" DataContext="{StaticResource customerViewSource}" Margin="0,12,-14,-33">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -131,7 +131,7 @@ Style="{StaticResource textBoxInError}"/>
                     <Label Content="Inventory" Grid.Column="1" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
                     <DataGrid x:Name="ordersDataGrid" AutoGenerateColumns="False"
 EnableRowVirtualization="True" ItemsSource="{Binding}"
-RowDetailsVisibilityMode="VisibleWhenSelected" IsSynchronizedWithCurrentItem="True" Margin="90,0,0,188">
+RowDetailsVisibilityMode="VisibleWhenSelected" IsSynchronizedWithCurrentItem="True" Margin="198,69,267,119" Grid.ColumnSpan="2">
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="FirstNameColumn" Binding="{Binding FirstName}"
 Header="First Name" Width="SizeToHeader"/>
